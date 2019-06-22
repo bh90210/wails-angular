@@ -9,9 +9,9 @@
  "binaryname": "test22",
  "frontend": {
   "dir": "frontend",
-  "install": "npm install",
-  "build": "npm run build",
+  "install": "npx ng",
+  "build": "npx ng build --single-bundle true --output-hashing none --prod --bundle-styles false",
   "bridge": "src",
-  "serve": "npm run serve"
+  "serve": "npx ng serve"
  }
 }

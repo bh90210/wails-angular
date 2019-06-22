@@ -9,19 +9,15 @@ import { ModalComponent } from './modal/modal.component';
 })
 export class AppComponent {
   title = 'my-app';
-  clickMessage: string;
+  clickMessage: 'string';
 
   constructor(public dialog: MatDialog) {}
 
   openDialog(): void {
     const dialogRef = this.dialog.open(ModalComponent, {
-      width: '250px',
+      width: '500px',
       data: {clickMessage: this.clickMessage}
     });
-
-    dialogRef.afterClosed().subscribe(result => {
-      this.clickMessage = result;
-    });
-    window.backend.basic().then(result => this.clickMessage = result);
+    
   }
 }

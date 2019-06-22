@@ -6,7 +6,7 @@ import (
 )
 
 func basic() string {
-	return "Hello World!"
+	return "World!"
 }
 
 func main() {
