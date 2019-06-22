@@ -18,7 +18,7 @@ export class AppComponent {
       width: '500px',
       data: {clickMessage: this.clickMessage}
     });
-
+// @ts-ignore
     window.backend.basic().then(result =>
       this.clickMessage = result
     );
